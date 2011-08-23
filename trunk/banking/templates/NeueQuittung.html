@@ -1,0 +1,93 @@
+{% extends "main.html" %}
+
+{% block h1 %}Neue Quittung{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript">
+	function checkinput() {
+		Tag = document.getElementById("Tag");
+		Monat = document.getElementById("Monat");
+		Jahr = document.getElementById("Jahr");
+		Stunde = document.getElementById("Stunde");
+		Minute = document.getElementById("Minute");
+		if ( Tag.value.length < 2 ) {
+			Tag.value = "0"+Tag.value;
+			}
+		if ( Monat.value.length < 2 ) {
+			Monat.value = "0"+Monat.value;
+			}
+		if ( Jahr.value.length == 0 ) {
+			Jahr.value = "11";
+			}
+		if ( Jahr.value.length == 2 ) {
+			Jahr.value = "20"+Jahr.value;
+			}
+		if ( Stunde.value.length < 2 ) {
+			Stunde.value = "0"+Stunde.value;
+			}
+		if ( Minute.value.length < 2 ) {
+			Minute.value = "0"+Minute.value;
+			}
+		}
+</script>
+
+<form action="/banking/NeueQuittung" method=POST onSubmit="checkinput();">
+
+{% csrf_token %}
+
+<table border=1 cellpadding=7 cellspacing=7>
+	<tr>
+		<td>Aussteller:</td>
+		<td>
+			<select name=Aussteller>{% for A in Aussteller %}
+				<option value={{ A.id }}>{{ A.name }} - {{ A.strasse }} {{ A.hausnummer }}</option>{% endfor %}
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Datum:</td>
+		<td>	<input name=Tag id=Tag style="width:20px;">.<input name=Monat id=Monat style="width:20px;">.<input name=Jahr id=Jahr style="width:40px;">
+			&nbsp;&nbsp;
+			<input name=Stunde id=Stunde style="width:20px;">:<input name=Minute id=Minute style="width:20px;">
+			&nbsp;&nbsp;Uhr
+		</td>
+	</tr>
+	<tr>
+		<td>Konto:</td>
+		<td>
+			<select name=Konto>{% for K in Bankkonten %}
+				<option value={{ K.id }}>{{ K.name }} - {{ K.kontonummer }} {{ K.kreditinstitut }}</option>{% endfor %}
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Betrag:</td>
+		<td>&euro; <input type=text name=VorKomma style="width:20px;" />,<input type=text name=NachKomma style="width:20px;" /></td>
+	</tr>
+	<tr>
+		<td>Zahlungsweise:</td>
+		<td>
+			<select name=Zahlungsweise>{% for Z in Zahlungsweisen %}
+				<option value={{ Z.id }}>{{ Z.name }}</option>{% endfor %}
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>Kategorie:</td>
+		<td>
+			<select name=Kategorie>{% for K in Kategorien %}
+				<option value={{ K.id }}>{{ K.name }}</option>{% endfor %}
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 align=right>
+			<input type=submit value="Speichern" />
+		</td>
+	</tr>
+</table>
+
+</form>
+
+{% endblock %}

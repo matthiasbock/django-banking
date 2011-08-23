@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+
+{% block h1 %}Quittungen{% endblock %}
+
+{% block content %}
+
+<table border=1 cellpadding=7 cellspacing=7>
+	<tr>
+		<th>ID</th>
+		<th>Aussteller</th>
+		<th>Datum</th>
+		<th>Konto</th>
+		<th>Betrag</th>
+		<th>Zahlungsweise</th>
+		<th>Kategorie</th>
+		<th>Kommentar</th>
+		<th>Buchung</th>
+	</tr>
+{% for Q in Quittungen %}
+	<tr>
+		<td>{{ Q.id }}</td>
+		<td>	{{ Q.aussteller.name }} {{ Q.aussteller.zusatz }}<br/>
+			{{ Q.aussteller.strasse }} {{ Q.aussteller.hausnummer }}<br/>
+			{{ Q.aussteller.PLZ }} {{ Q.aussteller.stadt }}
+		</td>
+		<td>{{ Q.datum|date:"j. F Y H:i" }}</td>
+		<td>	{{ Q.konto.name }}<br/>
+			Konto {{ Q.konto.kontonummer }}<br/>
+			{{ Q.konto.blz }} {{ Q.konto.kreditinstitut }}</td>
+		<td>&euro; {{ Q.betrag|floatformat:2 }}</td>
+		<td>{{ Q.zahlungsweise }}</td>
+		<td>{{ Q.kategorie }}</td>
+		<td><pre>{{ Q.kommentar }}</pre></td>
+		<td><a href="/banking/Buchung?ID={{ Q.buchung }}">{{ Q.buchung }}</a></td>
+	</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

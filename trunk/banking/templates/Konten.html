@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% block h1 %}Konten{% endblock %}
+
+{% block content %}
+
+<table border=1 cellpadding=7 cellspacing=7>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Zusatz</th>
+		<th>Kontonummer</th>
+		<th>BLZ</th>
+		<th>BIC</th>
+		<th>Kreditinstitut</th>
+		<th>IBAN</th>
+	</tr>
+{% for K in Konten %}
+	<tr>
+		<td>{{ K.id }}</td>
+		<td>{{ K.name }}</td>
+		<td>{{ K.zusatz }}</td>
+		<td>{{ K.kontonummer }}</td>
+		<td>{{ K.blz }}</td>
+		<td>{{ K.bic }}</td>
+		<td>{{ K.kreditinstitut }}</td>
+		<td>{{ K.iban }}</td>
+	</tr>
+{% endfor %}
+</table>
+
+{% endblock %}
