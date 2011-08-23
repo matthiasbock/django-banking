@@ -1,0 +1,32 @@
+{% extends "Banking.html" %}
+
+{% block h1 %}Konten{% endblock %}
+
+{% block content %}
+
+<table border=1 cellpadding=7 cellspacing=7>
+	<tr>
+		<th>ID</th>
+		<th>Bankkonto</th>
+		<th>Gegenseite</th>
+		<th>Datum</th>
+		<th>Wertstellung</th>
+		<th>Betrag</th>
+		<th>Primanota</th>
+		<th>Verwendungszweck</th>
+	</tr>
+{% for B in Buchungen %}
+	<tr>
+		<td align=center>{{ B.id }}</td>
+		<td>{% autoescape off %}{{ B.bankkonto }}{% endautoescape %}</td>
+		<td>{% autoescape off %}{{ B.gegenseite }}{% endautoescape %}</td>
+		<td align=center>{{ B.datum|date:"j. F Y" }}</td>
+		<td align=center>{{ B.valuta|date:"j. F Y" }}</td>
+		<td align=right>{{ B.betrag|floatformat:2 }}</td>
+		<td align=center>{{ B.primanota }}</td>
+		<td><pre>{{ B.verwendungszweck }}</pre></td>
+	</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

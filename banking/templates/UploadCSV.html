@@ -1,0 +1,13 @@
+{% extends "Banking.html" %}
+
+{% block h1 %}Quittungen{% endblock %}
+
+{% block content %}
+
+<form method=POST>
+	CSV-Datei im Format der Berliner Sparkasse:
+	<input type="file" name="CSV" size="40" maxlength="100000">
+	<input type="submit" name="Submit" value="Hochladen">
+</form>
+
+{% endblock %}
