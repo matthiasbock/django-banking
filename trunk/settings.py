@@ -7,14 +7,12 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-from Django.databases import BankingDB
-
 DATABASES = {
-	    BankingDB: {
+	    'django-banking': {
 		'ENGINE': 'mysql',
-		'NAME': BankingDB
+		'NAME': 'django-banking',
 		'USER': 'Django',
-		'PASSWORD': 'Django-PW',
+		'PASSWORD': '',
 		'HOST': 'localhost',
 		'PORT': '',
 	    }
