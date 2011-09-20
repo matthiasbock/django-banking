@@ -8,14 +8,14 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASES = {
-	    'django-banking': {
-		'ENGINE': 'mysql',
+	'django-banking': {
+		'ENGINE': 'django.db.backends.mysql',
 		'NAME': 'django-banking',
 		'USER': 'Django',
 		'PASSWORD': '',
 		'HOST': 'localhost',
 		'PORT': '',
-	    }
+		}
 	}
 
 TEMPLATE_DIRS = (
