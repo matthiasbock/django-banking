@@ -2,6 +2,7 @@
  * [Concept]
  * [python_banking python-banking]
   * [AqBanking]
+  * [FinTS]
  * [Database]
  * [Synchronizer]
  * [Notifier]
