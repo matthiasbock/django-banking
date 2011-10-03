@@ -1,0 +1,11 @@
+#summary Web interface
+
+= Web interface =
+
+ * list accounts
+ * list transactions
+
+= Later: =
+
+ * login and user permissions
+ * enter a bank transfer
