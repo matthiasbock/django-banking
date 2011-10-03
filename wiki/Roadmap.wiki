@@ -2,6 +2,6 @@
 
 = Intention =
 
-A simple web based account balance and transaction manager.
-Allows to comment your transactions and make statistics.
-Can notify you by email on bank account activity.
+ * A simple web based account balance and transaction manager.
+ * Allows to comment your transactions and make statistics.
+ * Notifies you via email when there is activity in your bank account.
