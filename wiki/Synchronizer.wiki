@@ -1,0 +1,7 @@
+#summary Synchronizer
+
+= Synchronizer =
+
+Use the python-banking library, make a mysql database connection and synchronize.
+
+You may want to install it as a cronjob.
