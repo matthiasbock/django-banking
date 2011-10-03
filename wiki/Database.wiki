@@ -2,4 +2,15 @@
 
 = Database =
 
- * http://mysql-python.sourceforge.net/MySQLdb.html
+http://mysql-python.sourceforge.net/MySQLdb.html
+
+primary:
+ * Accounts
+ * Transactions
+
+additionally:
+ * Statements
+
+= Laws =
+ * Every transaction belongs to 1 bank statement or no statement at all.
+ * Every transaction belongs to 1 bank account.
