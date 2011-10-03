@@ -3,5 +3,6 @@
  * [python_banking]
  * [AqBanking]
  * [Database]
+ * [Synchronizer]
  * [Notifier]
  * [WebInterface Web interface]
