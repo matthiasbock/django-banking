@@ -1,0 +1,5 @@
+#summary FinTS
+
+= FinTS =
+
+ * http://www.hbci-zka.de/
