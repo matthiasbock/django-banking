@@ -6,21 +6,21 @@ The project consists of several parts:
 
 = Part 1: the library =
 
-This main library *[python-banking]* is capable of establishing a conversation
-to a bank server and retrieve account information from it.
+This main library [python_banking python-banking] is capable of establishing a conversation to a bank server and retrieve account information from it.
 
+Archetype for this library is [AqBanking].
 = Part 2: the database =
 
-A database stores all settings, logins, account info and the transaction list.
+[Database The database] stores all settings, logins, account info and the transaction list.
 
 = Part 3: the cronjob =
 
-A console script connects to the set up bank accounts using the above library and synchronizes the transaction database.
+[cronjob The console script] connects to the set up bank accounts using the above library and synchronizes the transaction database.
 
 = Part 4: the notifier =
 
-If set up, an email is sent whenever a new transaction was detected.
+If set up, [Notifier the notifier] sends an email whenever a new transaction was detected.
 
 = Part 5: the web interface =
 
-A Django web interface shows all transactions and provides some statistics etc.
+[WebInterface The Django web interface] shows all transactions and provides some statistics etc.
