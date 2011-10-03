@@ -4,22 +4,22 @@
 
 The project consists of several parts:
 
-= Part 1: the library =
+= 1: the library =
 
 This main library [python_banking python-banking] is capable of establishing a conversation to a bank server and retrieve account information from it.
 
-= Part 2: the database =
+= 2: the database =
 
 [Database The database] stores all settings, logins, account info and the transaction list.
 
-= Part 3: the synchronizer =
+= 3: the synchronizer =
 
 [Synchronizer A console script] connects to the set up bank accounts using the above library and synchronizes the transaction database.
 
-= Part 4: the notifier =
+= 4: the notifier =
 
 If set up, [Notifier a console script] sends an email whenever a new transaction was detected.
 
-= Part 5: the web interface =
+= 5: the web interface =
 
 [WebInterface The Django web interface] shows all transactions and provides some statistics etc.
