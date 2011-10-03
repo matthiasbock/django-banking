@@ -2,15 +2,25 @@
 
 = Concept =
 
-The project consists of 2 parts:
+The project consists of several parts:
 
-= Part 1 - Console: python-banking library + cronjob =
+= Part 1: the library =
 
-A set of Python console scripts regularly checks (crontab) the set up bank accounts via HBCI and updates the appropriate transaction database.
+This main library *[python-banking]* is capable of establishing a conversation
+to a bank server and retrieve account information from it.
 
-If email notification is set up, an email is sent, when a new transaction is detected.
+= Part 2: the database =
 
-= Part 2 - Django web interface =
+A database stores all settings, logins, account info and the transaction list.
 
-A Django driven web interface shows all your transactions from the database
-and lets you do some statistics and such stuff.
+= Part 3: the cronjob =
+
+A console script connects to the set up bank accounts using the above library and synchronizes the transaction database.
+
+= Part 4: the notifier =
+
+If set up, an email is sent whenever a new transaction was detected.
+
+= Part 5: the web interface =
+
+A Django web interface shows all transactions and provides some statistics etc.
