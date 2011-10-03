@@ -4,6 +4,7 @@
 
  * list accounts
  * list transactions
+ * statistics
 
 = Later: =
 
