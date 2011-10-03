@@ -1,4 +1,7 @@
  * [Roadmap]
  * [Concept]
- * [Database]
+ * [python_banking]
  * [AqBanking]
+ * [Database]
+ * [Notifier]
+ * [WebInterface Web interface]
