@@ -3,10 +3,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
 
-from Django.globals import *
-from Django.Banking.models import *
-
-from AqBanking import *
+from Django.banking.models import *
 
 def Start( request ):
 	return HttpResponseRedirect("Buchungen/")
