@@ -12,13 +12,13 @@ This main library [python_banking python-banking] is capable of establishing a c
 
 [Database The database] stores all settings, logins, account info and the transaction list.
 
-= Part 3: the cronjob =
+= Part 3: the synchronizer =
 
-[cronjob The console script] connects to the set up bank accounts using the above library and synchronizes the transaction database.
+[Synchronizer A console script] connects to the set up bank accounts using the above library and synchronizes the transaction database.
 
 = Part 4: the notifier =
 
-If set up, [Notifier the notifier] sends an email whenever a new transaction was detected.
+If set up, [Notifier a console script] sends an email whenever a new transaction was detected.
 
 = Part 5: the web interface =
 
