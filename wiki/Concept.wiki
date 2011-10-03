@@ -8,7 +8,6 @@ The project consists of several parts:
 
 This main library [python_banking python-banking] is capable of establishing a conversation to a bank server and retrieve account information from it.
 
-Archetype for this library is [AqBanking].
 = Part 2: the database =
 
 [Database The database] stores all settings, logins, account info and the transaction list.
