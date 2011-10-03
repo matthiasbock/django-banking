@@ -1,6 +1,6 @@
 # -*- coding: iso-8859-15 -*-
 
-from banking.python.models import *
+from Django.banking.models import *
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views.decorators.cache import cache_control
