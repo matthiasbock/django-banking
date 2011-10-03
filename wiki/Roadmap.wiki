@@ -1,5 +1,10 @@
 #summary Roadmap
 
+= Status =
+
+ * library is not ready
+ * web interface is ready but very basic, allows for manual input
+
 = Roadmap =
 
  * establish a working banking library invoking aqbanking executables
