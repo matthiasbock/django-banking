@@ -4,13 +4,13 @@
 
 The project consists of 2 parts:
 
-= Part 1: Console =
+= Part 1 - Console: python-banking library + cronjob =
 
 A set of Python console scripts regularly checks (crontab) the set up bank accounts via HBCI and updates the appropriate transaction database.
 
 If email notification is set up, an email is sent, when a new transaction is detected.
 
-= Part 2: Web interface =
+= Part 2 - Django web interface =
 
 A Django driven web interface shows all your transactions from the database
 and lets you do some statistics and such stuff.
