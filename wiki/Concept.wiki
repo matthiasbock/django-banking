@@ -4,7 +4,7 @@
 
 The project consists of 2 parts:
 
-= Part 1: Console / Daemon =
+= Part 1: Console =
 
 A set of Python console scripts regularly checks (crontab) the set up bank accounts via HBCI and updates the appropriate transaction database.
 
