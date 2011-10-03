@@ -1,0 +1,5 @@
+#summary python-banking
+
+= python-banking =
+
+Archetype for this library is [AqBanking].
