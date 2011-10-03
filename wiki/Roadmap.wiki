@@ -1,5 +1,12 @@
 #summary Roadmap
 
+= Roadmap =
+
+ * establish a working banking library invoking aqbanking executables
+  * lateron try a standalone library
+ * write a parser for DKB transaction lists
+ * synchronize them with a mysql database
+
 = Intention =
 
  * A simple web based account balance and transaction manager.
