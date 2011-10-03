@@ -1,0 +1,7 @@
+#summary AqBanking
+
+= AqBanking =
+
+ * http://www.aquamaniac.de/sites/aqbanking/index.php
+ * http://linuxwiki.de/AqBanking
+ * http://linuxwiki.de/OpenHBCI/GetesteteBanken/DKB
