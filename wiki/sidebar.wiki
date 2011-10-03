@@ -1,6 +1,6 @@
  * [Roadmap]
  * [Concept]
- * [python_banking]
+ * [python_banking python-banking]
  * [AqBanking]
  * [Database]
  * [Synchronizer]
