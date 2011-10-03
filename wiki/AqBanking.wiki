@@ -7,6 +7,13 @@
  * http://linuxwiki.de/AqBanking?action=AttachFile&do=view&target=aqbanking-tool-README.txt
  * http://linuxwiki.de/OpenHBCI/GetesteteBanken/DKB
 
+= Example usage =
+
+{{{
+ $ aqhbci-tool4 mkpinlist -o PINFILE
+ $ aqbanking-cli -P PINFILE -n request --account=123456789 --transactions
+}}}
+
 = aqbanking-tool-README.txt =
 
 ... from the source tarball
