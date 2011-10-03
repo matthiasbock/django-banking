@@ -4,6 +4,6 @@
 
 http://mysql-python.sourceforge.net/MySQLdb.html
 
-= Accounts =
+== Accounts ==
 
-= Transactions =
+== Transactions ==
