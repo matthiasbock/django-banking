@@ -14,3 +14,4 @@ def UpgradeBankenliste( request ):
 	q = page.find("<td>", p)+4
 	r = page.find("</td>", q)
 	return page[q:r]
+
