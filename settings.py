@@ -17,6 +17,7 @@ DATABASES = {
 		'PORT': '',
 		}
 	}
+DATABASES = { 'default': DATABASES['django-banking'] }
 
 TEMPLATE_DIRS = (
 	'/var/www/Django/banking/templates',
