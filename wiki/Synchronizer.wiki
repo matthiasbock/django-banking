@@ -4,9 +4,11 @@
 
 == Codeflow ==
 
- * read settings from _synchronize.conf_
+ * read settings from _[synchronize_conf synchronize.conf]_
+ * import database setting from _settings.py_
  * make MySQL connection
- * import _python-banking_
+  * how to make a MySQL connection in Python: http://mysql-python.sourceforge.net/MySQLdb.html
+ * import _aqbanking.py_, the AqBanking Python binding
  * establish HBCI connection
  * get account list
   * create new accounts in DB as neccessary
@@ -17,6 +19,7 @@
    * is it present in the DB ?
     * no: upload it
     * trigger event, if applicable
+ * close DB connection
 
 == Event notification ==
 
