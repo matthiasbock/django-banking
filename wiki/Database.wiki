@@ -2,8 +2,6 @@
 
 = Database =
 
- * how to make MySQL connections in Python: http://mysql-python.sourceforge.net/MySQLdb.html
-
 == stored in the DB ==
  * Bank account list
  * Bank transaction list
