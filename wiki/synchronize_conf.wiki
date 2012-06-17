@@ -5,7 +5,7 @@
 == Example ==
 {{{
 [DKB Demo Account]
-login = https://hbci-pintan-by.s-hbci.de/PinTanServlet
+url = https://hbci-pintan-by.s-hbci.de/PinTanServlet
 certificate = dkb.cert
 userid = 12345678901234567
 customid = 1234567890
