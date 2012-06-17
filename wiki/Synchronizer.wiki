@@ -1,7 +1,27 @@
-#summary Synchronizer
+#summary Synchronization
 
-= Synchronizer =
+= Synchronization: _synchronize.py_ =
 
-Use the python-banking library, make a mysql database connection and synchronize.
+== Codeflow ==
 
-You may want to install it as a cronjob.
+ * read settings from _synchronize.conf_
+ * make MySQL connection
+ * import _python-banking_
+ * establish HBCI connection
+ * get account list
+  * create new accounts in DB as neccessary
+  * trigger event, if applicable
+ * for every account:
+  * get transaction list
+  * for every transaction:
+   * is it present in the DB ?
+    * no: upload it
+    * trigger event, if applicable
+
+== Event notification ==
+
+ * setup notification events in _synchronize.py_ (not ready, planned)
+
+== Automatic daily sync ==
+
+ * install _synchronize.py_ as a cronjob
