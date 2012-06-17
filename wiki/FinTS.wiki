@@ -8,7 +8,3 @@
   * http://linuxwiki.de/HBCI/F%C3%BCrEntwickler
   * http://linuxwiki.de/OpenHBCI
  * http://www.onlinebanking-forum.de/phpBB2/viewtopic.php?t=1174
-
-= DKB =
- * http://linuxwiki.de/OpenHBCI/GetesteteBanken/DKB
- * http://www.dkb.de/kundenservice/haeufige_fragen/internetbanking/
