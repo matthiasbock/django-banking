@@ -2,8 +2,15 @@
 
 = Database =
 
-http://mysql-python.sourceforge.net/MySQLdb.html
+ * how to make MySQL connections in Python: http://mysql-python.sourceforge.net/MySQLdb.html
 
-== Accounts ==
+== stored in the DB ==
+ * Bank account list
+ * Bank transaction list
+ * some experimental tables for bills and bank statements (future purpose, currently unused)
 
-== Transactions ==
+== not stored in the DB ==
+ * the database configuration (of course)
+ * the bank account configuration
+  * including the PIN for the HBCI connection
+ * notification settings
