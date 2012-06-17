@@ -1,6 +1,6 @@
 #summary Synchronization
 
-= Synchronization: _synchronize.py_ =
+= _synchronize.py_ =
 
 == Codeflow ==
 
