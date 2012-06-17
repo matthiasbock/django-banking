@@ -1,4 +1,4 @@
-#summary Synchronization
+#summary synchronize.py
 
 = _synchronize.py_ =
 
