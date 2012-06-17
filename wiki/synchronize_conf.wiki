@@ -2,6 +2,7 @@
 
 = _synchronize.conf_ =
 
+== Example ==
 {{{
 [DKB Demo Account]
 login = https://hbci-pintan-by.s-hbci.de/PinTanServlet
