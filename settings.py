@@ -1,3 +1,8 @@
+
+#
+# Django settings
+#
+
 DEBUG = True
 TEMPLATE_DEBUG = True 
 
@@ -10,14 +15,14 @@ MANAGERS = ADMINS
 DATABASES = {
 	'django-banking': {
 		'ENGINE': 'django.db.backends.mysql',
+		'HOST': 'localhost',
+		'PORT': '',
 		'NAME': 'django-banking',
 		'USER': 'Django',
 		'PASSWORD': '',
-		'HOST': 'localhost',
-		'PORT': '',
 		}
 	}
-DATABASES = { 'default': DATABASES['django-banking'] }
+DATABASES['default'] = DATABASES['django-banking']
 
 TEMPLATE_DIRS = (
 	'/var/www/Django/banking/templates',
@@ -26,9 +31,6 @@ TEMPLATE_DIRS = (
 LANGUAGE_CODE = 'de'
 TIME_ZONE = 'Germany/Berlin'
 USE_I18N = False
-
-MEDIA_URL = '/banking/static/'
-MEDIA_ROOT = '/var/www/Django/banking/static/'
 
 SECRET_KEY = ''
 
@@ -53,6 +55,4 @@ INSTALLED_APPS = (
 #    'django.contrib.admin',
     'banking.main',
 )
-
-LOGIN_URL = '/banking/Login'
 
