@@ -16,6 +16,10 @@ Online Banking tool, written by Martin Preuß.
  $ aqbanking-cli -P PINFILE -n request --account=123456789 --transactions
 }}}
 
+= aqhbci-tool4 HOWTO =
+
+ * http://linuxwiki.de/AqBanking/aqhbci-tool
+
 = aqbanking-tool-README.txt =
 
 ... from the source tarball
