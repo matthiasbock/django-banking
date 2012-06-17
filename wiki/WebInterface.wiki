@@ -2,11 +2,9 @@
 
 = Web interface =
 
- * list accounts
- * list transactions
- * statistics
+ * button: _"synchronize now"_
+ * list of bank accounts
+ * for every account:
+  * list of transactions
 
-= Later: =
-
- * login and user permissions
- * enter a bank transfer
+Currently the web interface is read-only.
