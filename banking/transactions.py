@@ -5,6 +5,16 @@ from django.shortcuts import render_to_response
 
 from Django.banking.models import *
 
+payment_methods = {	1: 'Nicht angegeben',
+			2: 'Barzahlung',
+			3: 'Girocard',
+			4: 'Lastschrift',
+			5: 'Kreditkarte',
+			6: 'Ueberweisung',
+			7: 'Dauerauftrag'
+		}
+
+
 def Start( request ):
 	return HttpResponseRedirect("Buchungen/")
 

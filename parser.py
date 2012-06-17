@@ -1,4 +1,5 @@
 # -*- coding: iso-8859-15 -*-
+#!/usr/bin/python
 
 import time
 from decimal import *
@@ -67,4 +68,8 @@ class accountInfoList:
 			q = source.find("} #accountInfo", p)
 			self.accountInfo.append( accountInfo(source[p:q]) )
 			p = source.find("accountInfo {", q)
+
+class HBCI_response:
+	def __init__(self, filename):
+		self.accountInfoList = accountInfoList( open(filename).read() )
 
