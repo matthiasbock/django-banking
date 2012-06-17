@@ -1,6 +1,6 @@
 #summary synchronize.conf
 
-= synchronize.conf =
+= _synchronize.conf_ =
 
 {{{
 [DKB Demo Account]
