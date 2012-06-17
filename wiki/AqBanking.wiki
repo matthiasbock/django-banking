@@ -2,6 +2,8 @@
 
 = AqBanking =
 
+Online Banking tool, written by Martin Preuß.
+
  * http://www.aquamaniac.de/sites/aqbanking/index.php
  * http://linuxwiki.de/AqBanking
  * http://linuxwiki.de/AqBanking?action=AttachFile&do=view&target=aqbanking-tool-README.txt
