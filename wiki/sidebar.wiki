@@ -1,6 +1,6 @@
  * [WebInterface Web interface]
  * [Synchronizer Synchronization]
-  * [synchronize.conf]
+  * [synchronize_conf]
  * [Database Database layout]
  * [AqBanking]
  * [FinTS]
