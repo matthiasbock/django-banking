@@ -1,0 +1,13 @@
+#summary synchronize.conf
+
+= synchronize.conf =
+
+{{{
+[DKB Demo Account]
+login = https://hbci-pintan-by.s-hbci.de/PinTanServlet
+certificate = dkb.cert
+userid = 12345678901234567
+customid = 1234567890
+bankcode = 12030000
+pin = abcde
+}}}
